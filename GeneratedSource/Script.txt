@@ -1,0 +1,10 @@
+bcp GIBDD.dbo.Owner in "PATH"  -T -S ServerName -C 1251 -t; -c
+--
+bcp GIBDD.dbo.Subject in "PATH"  -T -S ServerName  -C 1251 -t; -c
+--
+bcp GIBDD.dbo.Camera in "PATH"  -T -S ServerName  -C 1251 -t"||" -c 
+--
+bcp GIBDD.dbo.CarModel in "PATH" -T -S ServerName -C 1251 -t; -c 
+--
+
+
