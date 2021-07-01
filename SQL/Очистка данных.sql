@@ -2,7 +2,7 @@ begin transaction
 rollback
 
 ------------------------------------------------------------------------------------------------
---удаляем штрафы за ненужные года
+--СѓРґР°Р»СЏРµРј С€С‚СЂР°С„С‹ Р·Р° РЅРµРЅСѓР¶РЅС‹Рµ РіРѕРґР°
 ------------------------------------------------------------------------------------------------
 select * from FullFinesTable
 Where Year(Fine_dateTime) not in (2019,2020)
@@ -13,7 +13,7 @@ Where Year(Fine_dateTime) not in (2019,2020)
 Delete from FullFinesTable
 
 ------------------------------------------------------------------------------------------------
---проверка фио, чтобы были как минимум Имя и Фамилия
+--РїСЂРѕРІРµСЂРєР° С„РёРѕ, С‡С‚РѕР±С‹ Р±С‹Р»Рё РєР°Рє РјРёРЅРёРјСѓРј РРјСЏ Рё Р¤Р°РјРёР»РёСЏ
 ------------------------------------------------------------------------------------------------
 update FullFinesTable
 set Owner_FIO = 'aa'
@@ -26,8 +26,8 @@ Delete from FullFinesTable
 where charindex(' ', Owner_FIO) = 0
 
 ------------------------------------------------------------------------------------------------
---таблица аналогичная штрафам, но с кол-вом штрафов и общей суммой штрафов, с самой нарушаемой статьей и с годом, в котором было больше всего нарушений
---и с наличием людей добропорядочных (без штрафов)
+--С‚Р°Р±Р»РёС†Р° Р°РЅР°Р»РѕРіРёС‡РЅР°СЏ С€С‚СЂР°С„Р°Рј, РЅРѕ СЃ РєРѕР»-РІРѕРј С€С‚СЂР°С„РѕРІ Рё РѕР±С‰РµР№ СЃСѓРјРјРѕР№ С€С‚СЂР°С„РѕРІ, СЃ СЃР°РјРѕР№ РЅР°СЂСѓС€Р°РµРјРѕР№ СЃС‚Р°С‚СЊРµР№ Рё СЃ РіРѕРґРѕРј, РІ РєРѕС‚РѕСЂРѕРј Р±С‹Р»Рѕ Р±РѕР»СЊС€Рµ РІСЃРµРіРѕ РЅР°СЂСѓС€РµРЅРёР№
+--Рё СЃ РЅР°Р»РёС‡РёРµРј Р»СЋРґРµР№ РґРѕР±СЂРѕРїРѕСЂСЏРґРѕС‡РЅС‹С… (Р±РµР· С€С‚СЂР°С„РѕРІ)
 ------------------------------------------------------------------------------------------------
 
 Create table FineStatistics(
@@ -43,7 +43,7 @@ drop table FineStatistics
 
 select * from FineStatistics
 
---Сколько штрафов и на какую сумму есть у владельца автомобиля по разным статьям в порядке убывания суммы штрафа за статью? 
+--РЎРєРѕР»СЊРєРѕ С€С‚СЂР°С„РѕРІ Рё РЅР° РєР°РєСѓСЋ СЃСѓРјРјСѓ РµСЃС‚СЊ Сѓ РІР»Р°РґРµР»СЊС†Р° Р°РІС‚РѕРјРѕР±РёР»СЏ РїРѕ СЂР°Р·РЅС‹Рј СЃС‚Р°С‚СЊСЏРј РІ РїРѕСЂСЏРґРєРµ СѓР±С‹РІР°РЅРёСЏ СЃСѓРјРјС‹ С€С‚СЂР°С„Р° Р·Р° СЃС‚Р°С‚СЊСЋ? 
 go
 Create View  Violation_Title_Num_Sum
 As
@@ -58,12 +58,12 @@ drop view Violation_Title_Num_Sum
 
 Select * from Violation_Title_Num_Sum
 
---саммая нарушаямая статья КоАП по водителям
+--СЃР°РјРјР°СЏ РЅР°СЂСѓС€Р°СЏРјР°СЏ СЃС‚Р°С‚СЊСЏ РљРѕРђРџ РїРѕ РІРѕРґРёС‚РµР»СЏРј
 select * from Violation_Title_Num_Sum vT
 Where vT.numOfViolations = (select max(vt2.numOfViolations) from Violation_Title_Num_Sum vT2 where vT.Owner_id= vt2.Owner_id)
 Order by 1
 
---сколько нарушаений у автомобилиста в каждом году
+--СЃРєРѕР»СЊРєРѕ РЅР°СЂСѓС€Р°РµРЅРёР№ Сѓ Р°РІС‚РѕРјРѕР±РёР»РёСЃС‚Р° РІ РєР°Р¶РґРѕРј РіРѕРґСѓ
 Create View ViolationPerYearByOwner
 As
 Select o.Owner_id,f.Owner_FIO, count(f.Violation_sum) as numOfViolations, year(f.Fine_dateTime) as V_Year
@@ -98,7 +98,7 @@ Insert Into FineStatistics
 Select * from Owner o
 Where o.Owner_id not in (Select Owner_id From Violation_Title_Num_Sum)
 ------------------------------------------------------------------------------------------------
---проверка правильности введеденой модели автомобиля и исправление
+--РїСЂРѕРІРµСЂРєР° РїСЂР°РІРёР»СЊРЅРѕСЃС‚Рё РІРІРµРґРµРґРµРЅРѕР№ РјРѕРґРµР»Рё Р°РІС‚РѕРјРѕР±РёР»СЏ Рё РёСЃРїСЂР°РІР»РµРЅРёРµ
 ------------------------------------------------------------------------------------------------
 SET DATEFORMAT ymd; 
 
@@ -128,7 +128,7 @@ Begin
 		select @RightCarModel_title = CarModel_title From CarModel cm Join Car c ON c.CarModel_id = cm.CarModel_id Where c.Car_id = @Car_id
 		if(@CarModel_title is null OR @CarModel_title != @RightCarModel_title)
 			Begin
-			print ('Было:' + isnull(@CarModel_title,'Null') + ', Стало: ' + @RightCarModel_title);
+			print ('Р‘С‹Р»Рѕ:' + isnull(@CarModel_title,'Null') + ', РЎС‚Р°Р»Рѕ: ' + @RightCarModel_title);
 			Update FullFinesTable
 			Set CarModel_title = @RightCarModel_title
 			Where Car_id = @Car_id And (CarModel_title = @CarModel_title OR CarModel_title is null);
