@@ -8,6 +8,13 @@ ETL данных
 Диграмма БД после обогащения данных:
 ![01](https://user-images.githubusercontent.com/86796337/124172902-0ef6f980-dab3-11eb-99a8-467d53881f98.jpg)  <br />
 
+
+Запросы, представления, хранимые процедуры:
+![image](https://user-images.githubusercontent.com/86796337/124195266-c0f1ee00-dad2-11eb-899f-8b9482171734.png) <br />
+![image](https://user-images.githubusercontent.com/86796337/124195335-e7b02480-dad2-11eb-9e9d-0f8140e4e961.png)
+
+
+
 Логином:
 ![1](https://user-images.githubusercontent.com/86796337/124172907-10282680-dab3-11eb-8346-2940d6f89832.png)  <br />
 
