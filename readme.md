@@ -31,6 +31,7 @@ XYZ-модуль:
 ![21](https://user-images.githubusercontent.com/86796337/124173419-aceac400-dab3-11eb-9c32-d3871d1b4d64.png)  <br />
 
 Конечная диаграмма слияния ABC и XYZ групп
-![5](https://user-images.githubusercontent.com/86796337/124173400-a8261000-dab3-11eb-9de0-77e2c1fd5f10.png)  <br />
+![5](https://user-images.githubusercontent.com/86796337/124174416-00a9dd00-dab5-11eb-9a98-e47886cca77e.png)
+  <br />
 
 
