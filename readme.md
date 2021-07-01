@@ -11,7 +11,15 @@ ETL данных
 
 Запросы, представления, хранимые процедуры:
 ![image](https://user-images.githubusercontent.com/86796337/124195266-c0f1ee00-dad2-11eb-899f-8b9482171734.png) <br />
-![image](https://user-images.githubusercontent.com/86796337/124195335-e7b02480-dad2-11eb-9e9d-0f8140e4e961.png)
+![image](https://user-images.githubusercontent.com/86796337/124195335-e7b02480-dad2-11eb-9e9d-0f8140e4e961.png) <br />
+
+Очистка данных:
+![image](https://user-images.githubusercontent.com/86796337/124195400-10381e80-dad3-11eb-9edf-50f885e81f53.png) <br />
+
+
+Обогащение данных: ![image](https://user-images.githubusercontent.com/86796337/124195471-3cec3600-dad3-11eb-8cb2-04c438f38344.png)
+<br />
+
 
 
 
