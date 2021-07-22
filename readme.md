@@ -28,6 +28,8 @@ ETL данных <br />
 </details>
 
 
+<details> <summary>Логином</summary>
+
 Логином:
 ![1](https://user-images.githubusercontent.com/86796337/124172907-10282680-dab3-11eb-8346-2940d6f89832.png)  <br />
 
@@ -37,6 +39,10 @@ ETL данных <br />
 Группировка по сезонам:
 ![000](https://user-images.githubusercontent.com/86796337/124174018-8416fe80-dab4-11eb-932a-666d08339f54.png) <br />
 
+Квантование по сумме штрафа:
+ ![quantization](https://user-images.githubusercontent.com/86796337/126626978-f20177bc-d810-40f2-9714-6d2ca5f9134e.png) <br />
+
+ 
 
 ABC-модуль:
 ![4](https://user-images.githubusercontent.com/86796337/124172922-13231700-dab3-11eb-8854-84b21e6c215d.png)  <br />
@@ -55,4 +61,4 @@ XYZ-модуль:
 ![5](https://user-images.githubusercontent.com/86796337/124174416-00a9dd00-dab5-11eb-9a98-e47886cca77e.png)
   <br />
 
-
+</details>
