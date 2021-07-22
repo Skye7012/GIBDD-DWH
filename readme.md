@@ -29,8 +29,7 @@ ETL данных <br />
 
 
 <details> <summary>Логином</summary>
-
-Логином:
+ 
 ![1](https://user-images.githubusercontent.com/86796337/124172907-10282680-dab3-11eb-8346-2940d6f89832.png)  <br />
 
 Главная таблица с которой работаем:
@@ -62,3 +61,30 @@ XYZ-модуль:
   <br />
 
 </details>
+
+<details> <summary>Логином видео демонстрация</summary>
+
+ <br />
+              <details> <summary>Основной сценарий: </summary>
+
+ https://user-images.githubusercontent.com/86796337/126628378-88a3f4a1-3c11-4aa8-8e07-07ce053a0285.mp4  
+
+ 
+</details>
+ 
+ <br />
+             <details> <summary>ABC-группы: </summary>
+ 
+ https://user-images.githubusercontent.com/86796337/126628460-ae847968-8e12-499e-988d-44f497e2a5df.mp4 
+ 
+ </details>
+<br />
+               <details> <summary>XYZ-группы: </summary>
+ 
+https://user-images.githubusercontent.com/86796337/126628473-7aaa83a5-c811-43bf-a753-55b1547cd58c.mp4 
+</details>
+
+
+</details>
+ 
+
