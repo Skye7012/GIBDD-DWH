@@ -2,6 +2,10 @@
 Парсинг данных с сайтов для ХД  
 ETL данных <br />
 Работа с полученными данными в Loginom <br /> <br />
+
+<details> <summary>БД</summary>
+
+
 Диаграмма БД:
 ![0](https://user-images.githubusercontent.com/86796337/124172896-0dc5cc80-dab3-11eb-9e2e-d55010233354.jpg) <br /> 
 
@@ -21,7 +25,7 @@ ETL данных <br />
 Обогащение данных: ![image](https://user-images.githubusercontent.com/86796337/124195471-3cec3600-dad3-11eb-8cb2-04c438f38344.png)
 <br />
 
-
+</details>
 
 
 Логином:
